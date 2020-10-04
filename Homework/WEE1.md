@@ -20,6 +20,7 @@ CHIP Not {
   // Put your code here:
   Nand(a=in, b=in, out=out);
 }</code></pre>
+![picture].()
 
 ## 2.AND
 * CODE
@@ -43,6 +44,7 @@ CHIP And {
     Nand(a=a , b=b , out=AnandB);
     Not(in=AnandB , out=out);
 }</code></pre>
+![picture].()
 
 ## 3.OR
 * CODE
@@ -67,6 +69,7 @@ CHIP Or {
     Not(in=b, out=nb);
     Nand(a=na , b=nb , out=out);
 }</code></pre>
+![picture].()
 
 ## 4.XOR
 * CODE
@@ -92,6 +95,7 @@ CHIP Xor {
     And(a=a , b=nb , out=o2);
     Or(a=o1 , b=o2 , out=out);
 }</code></pre>
+![picture].()
 
 ## 5.MUX
 * CODE
@@ -118,6 +122,7 @@ CHIP Mux {
     Or(a=AandNS , b=BandSEL , out=out);
 
 }</code></pre>
+![picture].()
 
 ## 6.DMUX
 * CODE
@@ -142,3 +147,4 @@ CHIP DMux {
     And(a=in,b=nsel,out=a);
     And(a=in,b=sel,out=b);
 }</code></pre>
+![picture].()
