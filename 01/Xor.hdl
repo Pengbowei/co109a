@@ -19,4 +19,4 @@ CHIP Xor {
     And(a=na , b=b , out=o1);
     And(a=a , b=nb , out=o2);
     Or(a=o1 , b=o2 , out=out);
-}
+}   
