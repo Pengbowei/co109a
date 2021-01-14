@@ -1,5 +1,7 @@
 # Homework WEEK3
 
+* 程式碼解析以及本週心得皆在最底部!!!
+
 ## 1.HalfAdder
 
 * CODE
