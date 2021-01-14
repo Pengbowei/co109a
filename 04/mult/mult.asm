@@ -7,25 +7,28 @@
 // (R0, R1, R2 refer to RAM[0], RAM[1], and RAM[2], respectively.)
 
 // Put your code here.
-@2
-M = 0
+
+// R0 加上 R1 次後存入 R2
+
+@2  
+M = 0   // R2設為0
 
 (loop)
 @1
-D = M
+D = M   //將R1存入暫存器
 @exit
-D;JEQ
+D;JEQ   //若R1為0 JUMP TO @exit
 
 @0
-D = M
+D = M   // 將R0存入暫存器
 @2
-M = M + D
+M = M + D   // R2 = R2 + R0
 
 @1
-M = M - 1
+M = M - 1   // R1 - 1
 
 @loop
-0;JMP
+0;JMP // JUMP to loop
 
 (exit)
 @exit
