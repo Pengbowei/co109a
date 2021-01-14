@@ -20,7 +20,7 @@ CHIP Not {
   // Put your code here:
   Nand(a=in, b=in, out=out);
 }</code></pre>
-<img src='picture/NOT.jpg'>
+<img src='picture/NOT.jpg' height='300'></img>
 
 ## 2.AND
 * CODE
@@ -44,8 +44,7 @@ CHIP And {
     Nand(a=a , b=b , out=AnandB);
     Not(in=AnandB , out=out);
 }</code></pre>
-![picture].()
-
+<img src='picture/AND.jpg' height='300'></img>
 ## 3.OR
 * CODE
 <pre><code>// This file is part of www.nand2tetris.org
@@ -69,7 +68,7 @@ CHIP Or {
     Not(in=b, out=nb);
     Nand(a=na , b=nb , out=out);
 }</code></pre>
-![picture].()
+<img src='picture/OR.jpg' height='300'></img>
 
 ## 4.XOR
 * CODE
@@ -95,7 +94,7 @@ CHIP Xor {
     And(a=a , b=nb , out=o2);
     Or(a=o1 , b=o2 , out=out);
 }</code></pre>
-![picture].()
+<img src='picture/XOR.jpg' height='300'></img>
 
 ## 5.MUX
 * CODE
@@ -122,7 +121,7 @@ CHIP Mux {
     Or(a=AandNS , b=BandSEL , out=out);
 
 }</code></pre>
-![picture].()
+<img src='picture/Mux.jpg' height='300'></img>
 
 ## 6.DMUX
 * CODE
@@ -147,4 +146,9 @@ CHIP DMux {
     And(a=in,b=nsel,out=a);
     And(a=in,b=sel,out=b);
 }</code></pre>
-![picture].()
+<img src='picture/DMux.jpg' height='300'></img>
+
+
+## 本週心得
+* 覺得滿厲害的一堂課，最後還可以自己設計Computer
+* 這週設計了最基本的六個電路閘
