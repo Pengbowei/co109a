@@ -20,7 +20,7 @@ CHIP Not {
   // Put your code here:
   Nand(a=in, b=in, out=out);
 }</code></pre>
-![picture].()
+<img src='picture/NOT.jpg'>
 
 ## 2.AND
 * CODE
