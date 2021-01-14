@@ -1,5 +1,8 @@
 # Homework Week 2
 
+## 迪摩根定律第二式
+<img src='picture/demorgan.jpg' height='300'>
+
 ## 1.Not16
 * CODE
 <pre><code>// This file is part of www.nand2tetris.org
