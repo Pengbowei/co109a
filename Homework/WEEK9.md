@@ -57,4 +57,4 @@ M = M - 1   // R1 - 1
 * M為指定記憶體中的值
 * D為暫存器
 * 存下指令圖備用，這樣較方便查詢
-<img src='picture/CODE.jpg' height='400'></img>
+<img src='picture/CODE.png' height='400'></img>
