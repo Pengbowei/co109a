@@ -25,7 +25,7 @@ CHIP Bit {
     DFF(in=muxO , out=out , out=outT);
 }
 </code></pre>
-
+<img src='picture/bit.jpg' height='300'></img>
 * 當時間為t時load為1，輸出為in的t-1。否則為out的t-1。故使用Mux! a為out[t-1] b為in[t]
 
 ## 2.Register
@@ -67,6 +67,8 @@ CHIP Register {
     Bit(in=in[15] , load=load , out=out[15]);
 }
 </code></pre>
+
+<img src='picture/register.jpg' height='300'></img>
 
 * Register為16個Bit所構成
 
