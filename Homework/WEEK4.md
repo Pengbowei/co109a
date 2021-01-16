@@ -129,7 +129,7 @@ CHIP Inc16 {
    HalfAdder(a=in[14] , b=c13 , sum=out[14] , carry=c14);
    HalfAdder(a=in[15] , b=c14 , sum=out[15] , carry=c15);
 }</code></pre>
-<img src='picture/ing.jpg' height='300'></img>
+<img src='picture/inc.jpg' height='300'></img>
 
 ## 本週心得
 

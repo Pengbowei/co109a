@@ -137,6 +137,8 @@ CHIP ALU {
    Not(in=o , out=zr);
 }</code></pre>
 
+<img src='picture/alu.jpg' height='300'></img>
+
 * 根據2的補數，最後一個Bit為控制正負數，故out[15]=ng。由於沒有Or16Way，故使用兩個Or8Way來取得zr，只要out的其中一個Bit不為0則zr != 0
 * 參考網址:https://github.com/FUYUHSUAN/co109a/blob/master/homework/HW4(5week).md
 
