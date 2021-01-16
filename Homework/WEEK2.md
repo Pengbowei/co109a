@@ -39,6 +39,8 @@ CHIP Not16 {
     NOT(in=in[15] , out=out[15]);
 }</code></pre>
 
+<img src='picture/not16.jpg' height='300'></img>
+
 ## 2.And16
 
 * CODE
@@ -75,7 +77,7 @@ CHIP And16 {
     And(a=a[14],b=b[14],out=out[14]);
     And(a=a[15],b=b[15],out=out[15]);
 }</code></pre>
-
+<img src='picture/and16.jpg' height='300'></img>
 ## 3.Or16
 
 * CODE
@@ -112,6 +114,7 @@ CHIP Or16 {
     Or(a=a[14] , b=b[14] , out=out[14]);
     Or(a=a[15] , b=b[15] , out=out[15]);
 }</code></pre>
+<img src='picture/or16.jpg' height='300'></img>
 
 ## 4.Or8Way
 
@@ -140,6 +143,7 @@ CHIP Or8Way {
     Or(a=out5 , b=in[6] , out=out6);
     Or(a=out6 , b=in[7] , out=out);
 }</code></pre>
+<img src='picture.or8way.jpg' height='300'></img>
 
 ## 5.Mux16
 
@@ -179,6 +183,7 @@ CHIP Mux16 {
     Mux(a=a[15] , b=b[15] , sel=sel , out=out[15]);
 }
 </code></pre>
+<img src='picture/mux16.jpg' height='300'></img>
 
 ## 6.Mux4Way16
 
@@ -207,6 +212,7 @@ CHIP Mux4Way16 {
     Mux16(a=c , b=d , sel=sel[0] , out=y);
     Mux16(a=x , b=y , sel=sel[1] , out=out);
 }</code></pre>
+<img src='picture/mux4way16.jpg' height='300'></img>
 
 ## 7.Mux8Way16
 
@@ -246,6 +252,7 @@ CHIP Mux8Way16 {
     Mux4Way16(a=e,b=f,c=g,d=h,sel=sel[0..1],out=Mux4efgh);
     Mux16(a=Mux4abcd,b=Mux4efgh,sel=sel[2],out=out);
 }</code></pre>
+<img src='picture/mux8way16.jpg' height='300'></img>
 
 ## 8.DMux4Way
 
@@ -274,6 +281,7 @@ CHIP DMux4Way {
     DMux(in=ao , sel=sel[0] , a=a , b=b);
     DMux(in=bo , sel=sel[0] , a=c , b=d);
 }</code></pre>
+<img src='picture/dmux4way.jpg' height='300'></img>
 
 ## 9.DMux8Way
 
@@ -302,6 +310,7 @@ CHIP DMux8Way {
     DMux4Way(in=ao , sel=sel[0..1] , a=a , b=b , c=c , d=d);
     DMux4Way(in=bo , sel=sel[0..1] , a=e , b=f , c=g , d=h);
 }</code></pre>
+<img src='picture.dmux8way.jpg' height='300'></img>
 
 ## 本週心得
 * 這週學到的閘為上週的進階版，閘的輸入不再是1bit而進入到了16bits
