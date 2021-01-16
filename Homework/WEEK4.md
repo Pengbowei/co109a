@@ -26,6 +26,7 @@ CHIP HalfAdder {
     And(a=a , b=b , out=carry);
 }
 </code></pre>
+<img src='picture/ha.jpg' height='300'></img>
 
 ## 2.FullAdder
 
@@ -51,6 +52,7 @@ CHIP FullAdder {
     HalfAdder(a=c , b=ab , sum=sum , carry=acab);
     Or(a=cab , b=acab , out=carry);
 }</code></pre>
+<img src='picture/fa.jpg' height='300'></img>
 
 ## 3.Add16
 
@@ -88,6 +90,7 @@ CHIP Add16 {
    FullAdder(a=a[14] , b=b[14] , c=c13 , sum=out[14] , carry=c14);
    FullAdder(a=a[15] , b=b[15] , c=c14 , sum=out[15] , carry=c15);
 }</code></pre>
+<img src='picture/add.jpg' height='300'></img>
 
 ## 4. Inc16
 
@@ -126,6 +129,7 @@ CHIP Inc16 {
    HalfAdder(a=in[14] , b=c13 , sum=out[14] , carry=c14);
    HalfAdder(a=in[15] , b=c14 , sum=out[15] , carry=c15);
 }</code></pre>
+<img src='picture/ing.jpg' height='300'></img>
 
 ## 本週心得
 
