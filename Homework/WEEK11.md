@@ -47,6 +47,8 @@ CHIP Memory {
 
 }</code></pre>
 
+<img src='picture/memory.jpg' height='400'></img>
+
 * 程式執行中若暫停將view調為screen後長按k就可以了
 <img src='picture/pressK.png' height='300'>
 
