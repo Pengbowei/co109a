@@ -31,6 +31,6 @@ CHIP PC {
 
 }
 </code></pre>
-<img src='picture/pc.jpg' height='300'></img>
+<img src='picture/pc.jpg' height='500'></img>
 ## 本週心得
 * PC設計原理與上個單元的ALU相似，但控制上有分先後順序，若順序錯了程式就無法順利執行!
