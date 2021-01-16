@@ -49,4 +49,12 @@ M = M - 1   // R1 - 1
 <img src='picture/multRun.jpg' height='300'></img>
 
 ## 本週心得
-* 
+* 這周遇到了一點障礙，語法不習慣導致沒有辦法順利地寫出程式。
+* 參考網址:https://github.com/FUYUHSUAN/co109a/blob/master/homework/HW8(9week).md
+
+## 語法筆記
+* "@"為指定記憶體位置
+* M為指定記憶體中的值
+* D為暫存器
+* 存下指令圖備用，這樣較方便查詢
+<img src='picture/CODE.jpg' height='400'></img>
