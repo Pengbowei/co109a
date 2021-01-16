@@ -83,6 +83,7 @@ CHIP CPU {
 <img src='picture/cpu.jpg' height='400'></img>
 
 * instruction的控制以繪再圖片中
+
 <img src='picture/cpu.png' height='300'></img>
 
 * ARegister-c 利用 instruction[5] & instruction[15] 做出
