@@ -71,3 +71,5 @@ D;JGT	//IF A=0 EXIT AS THE WHOLE SCREEN IS BLACK
 /////////////////////////
 @RESTART
 0;JMP</code></pre>
+
+## 本周心得
