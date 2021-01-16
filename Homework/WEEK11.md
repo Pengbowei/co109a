@@ -48,10 +48,10 @@ CHIP Memory {
 }</code></pre>
 
 * 程式執行中若暫停將view調為screen後長按k就可以了
-<img src='picture.pressK.png' height='300'>
+<img src='picture/pressK.png' height='300'>
 
 * 之後再按下Y程式就能成功執行
-<img src='picture.pressY.png' height='300'>
+<img src='picture/pressY.png' height='300'>
 
 * 參考網址:http://people.duke.edu/~nts9/logicgates/Memory.hdl
 
