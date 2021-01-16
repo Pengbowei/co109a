@@ -10,7 +10,7 @@
 課程內容 | https://gitlab.com/ccc109/co
 
 ## 習題
-* <a href='https://github.com/Pengbowei/co109a/blob/master/Homework/WEEK1.md'>第1周</a>
+* <a href='WEEK1.md'>第1周</a>
 * <a href='https://github.com/Pengbowei/co109a/blob/master/Homework/WEEK2.md'>第2周</a>
 * <a href='https://github.com/Pengbowei/co109a/blob/master/Homework/WEEK4.md'>第4周</a>
 * <a href='https://github.com/Pengbowei/co109a/blob/master/Homework/WEEK5.md'>第5周</a>
