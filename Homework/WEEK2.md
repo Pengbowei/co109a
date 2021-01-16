@@ -143,7 +143,7 @@ CHIP Or8Way {
     Or(a=out5 , b=in[6] , out=out6);
     Or(a=out6 , b=in[7] , out=out);
 }</code></pre>
-<img src='picture.or8way.jpg' height='300'></img>
+<img src='picture/or8way.jpg' height='300'></img>
 
 ## 5.Mux16
 
@@ -310,7 +310,7 @@ CHIP DMux8Way {
     DMux4Way(in=ao , sel=sel[0..1] , a=a , b=b , c=c , d=d);
     DMux4Way(in=bo , sel=sel[0..1] , a=e , b=f , c=g , d=h);
 }</code></pre>
-<img src='picture.dmux8way.jpg' height='300'></img>
+<img src='picture/dmux8way.jpg' height='300'></img>
 
 ## 本週心得
 * 這週學到的閘為上週的進階版，閘的輸入不再是1bit而進入到了16bits
