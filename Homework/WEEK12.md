@@ -80,6 +80,8 @@ CHIP CPU {
 	PC(in=A,load=ld,inc=true,reset=reset,out[0..14]=pc);
 }</code></pre>
 
+<img src='picture/cpu.jpg' height='400'></img>
+
 * instruction的控制以繪再圖片中
 <img src='picture/cpu.png' height='300'></img>
 
