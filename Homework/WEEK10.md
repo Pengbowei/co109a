@@ -78,4 +78,3 @@ D;JGT	//IF A=0 EXIT AS THE WHOLE SCREEN IS BLACK
 <img src='picture/fillRun.jpg' height='400'></img>
 * 程式執行
 
-## 本周心得
