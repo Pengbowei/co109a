@@ -12,56 +12,46 @@
 // the screen should remain fully clear as long as no key is pressed.
 
 // Put your code here.
-(RESTART)
-@SCREEN
-D=A 
-@0
-M=D	//將SCREEN起始位置存入RAM[0]
-
-///////////////////////////
-(KBDCHECK)
-
-@KBD
+//16384到24575 為螢幕
+//24576為鍵盤
+@16383
+D=A //將值先輸入D
+@20
+M=D //R20存入控制螢幕初始值
+@21
+M=D //R21存入控制螢幕初始值
+@8192
+D=A //存入計數器控制螢幕反白
+M=D
+@8193
+M=D //存入計數器控制螢幕變黑
+@24576
+D=M 
+@27
+D;JEQ //當沒按鍵盤跳到迴圈(LOOP1反白)
+@20   //當按鍵盤跳到迴圈(LOOP2反黑)[迴圈LOOP2開頭]
+M=M+1 //A+1(16383+1......)
+D=M   
+A=D
+M=-1 //反黑指令
+@8193 
+M=M-1 //計數器-1
 D=M
-@BLACK
-D;JGT	//如果按下KBD任何鍵JUMP TO BLACK
-@WHITE
-D;JEQ	//否則 TIMP TO WHITE
-
-@KBDCHECK
-0;JMP
-///////////////////////////
-(BLACK)
-@1
-M=-1	//螢幕反黑
-@CHANGE
-0;JMP
-
-(WHITE)
-@1
-M=0	//螢幕反白
-@CHANGE
-0;JMP
-//////////////////////////
-(CHANGE)
-@1	//檢查螢幕式黑色還是白色
-D=M	//暫存器保存現在螢幕的值
-
+@39  
+D;JEQ //當計數器0跳出迴圈LOOP2
+@15
+0;JMP //回到LOOP2迴圈
+@21 //當沒按鍵盤跳到迴圈(LOOP1反白)[迴圈LOOP2開頭]
+M=M+1 //A+1(16383+1......)
+D=M
+A=D
+M=0 //反白指令
+@8192
+M=M-1 //計數器-1
+D=M
+@39
+D;JEQ //當計數器0跳出迴圈LOOP1
+@27
+0;JMP //回到LOOP1迴圈
 @0
-A=M	//取得螢幕pixel位置
-M=D	//反黑或反白
-
-@0
-D=M+1	//INC TO NEXT PIXEL
-@KBD
-D=A-D	//KBD-SCREEN=A
-
-@0
-M=M+1	//INC TO NEXT PIXEL
-A=M
-
-@CHANGE
-D;JGT	//IF A=0 EXIT AS THE WHOLE SCREEN IS BLACK
-/////////////////////////
-@RESTART
-0;JMP
+0;JMP //回到主迴圈指令1
