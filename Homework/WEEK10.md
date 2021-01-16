@@ -72,10 +72,10 @@ D;JGT	//IF A=0 EXIT AS THE WHOLE SCREEN IS BLACK
 @RESTART
 0;JMP</code></pre>
 
-* 轉為機械碼
 <img src='picture/fillToHack.jpg' height='400'></img>
+* 轉為機械碼
 
-* 程式執行
 <img src='picture/fillRun.jpg' height='400'></img>
+* 程式執行
 
 ## 本周心得
