@@ -1,5 +1,8 @@
 # Homework WEEK7
 
+* 由於RAM規則都相似，所以我整理在同一張圖內
+<img src='picture/ram.jpg' height='300'></img>
+
 ## 1.RAM8
 
 * CODE
