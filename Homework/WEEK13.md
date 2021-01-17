@@ -35,4 +35,4 @@ CHIP Computer {
 </code></pre>
 <img src='picture/computer.jpg' height='400'></img>
 
-* 有許多的tst，每個都需要測試
+* 有許多的tst，每個都需要測試 
